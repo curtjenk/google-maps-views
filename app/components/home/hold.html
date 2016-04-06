@@ -1,0 +1,40 @@
+<!-- <section layout="row" flex="">
+    <md-content flex="">
+        <div class="toggleButton" layout="column">
+            <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+                <i id="toggle-navbar" class="large material-icons">menu</i>
+            </md-button>
+        </div>
+        <div id="map"></div>
+        <div flex=""></div>
+    </md-content>
+    <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right" md-is-locked-open="$mdMedia('gt-md')">
+        <md-content class="mdSideNavInner" ng-controller="RightCtrl" layout-padding="">
+            <md-button ng-click="close()" class="md-primary closeButton">
+                <i style="font-size: 40px" class="material-icons">close</i>
+            </md-button>
+            <md-input-container layout="row">
+                <md-select ng-model="selectedPlace" ng-model-options="{trackBy: '$value.id'}" placeholder="Select a Place">
+                    <md-option ng-click="selectedPlace = null">Select a Place</md-option>
+                    <md-option ng-value="place" ng-repeat="place in places">Find {{place.label}}</md-option>
+                </md-select>
+            </md-input-container>
+           
+            <input id="cityFilterInput" class="ng-scope" type="text" ng-model="cityFilter" placeholder="Filter by City">
+            <button type="button" class="btn btn-default" ng-click="cityFilter=undefined; reInitMap()">Reset
+                <span class="glyphicon glyphicon-refresh"></span>
+            </button>
+            <div ng-repeat="city in cities | filter:cityFilter:cityFilterComparator as results" class="left">
+                <div class="info-button">
+                    <a href="" ng-click="zoomClick(city.yearRank)">
+                        <i class="material-icons">location_searching</i>
+                    </a>
+                    <a href="#" ng-click="showInfoClick(city.yearRank)">{{city.city}}</a>
+                </div>
+            </div>
+            <div ng-if="results.length == 0">
+                <strong>No match(es) found...</strong>
+            </div>
+        </md-content>
+    </md-sidenav>
+</section> -->

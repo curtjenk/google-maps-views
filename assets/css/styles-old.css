@@ -1,0 +1,20 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100vh;
+}
+.top-row {
+  height: 5vh;
+  width: 100%;
+  background-color: #6BB9FF;
+}
+#list {
+   overflow: auto;
+   height: 100vh;
+   font-size: 14px;
+}
